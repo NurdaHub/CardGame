@@ -830,8 +830,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelManager: {fileID: 1455026441}
   playerCard: {fileID: 978275435}
-  redCardPrefab: {fileID: 6969069991349886195, guid: 319f9f87ee0bfdb4b907a45eb99e50f2, type: 3}
-  greenCardPrefab: {fileID: 8412372057891762030, guid: d25a64d66e6d7014f86b9a4cf5d77b77, type: 3}
+  redCardPrefab: {fileID: 2714239172929897308, guid: 319f9f87ee0bfdb4b907a45eb99e50f2, type: 3}
+  greenCardPrefab: {fileID: 6809642897802584415, guid: d25a64d66e6d7014f86b9a4cf5d77b77, type: 3}
   mainCamera: {fileID: 1913131692}
   allSlots:
   - {fileID: 583230532}
@@ -903,6 +903,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 518548614}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &518548616
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1220,6 +1221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 770265218}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &770265220
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1438,6 +1440,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 956428930}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &956428932
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1593,6 +1596,7 @@ GameObject:
   - component: {fileID: 978275436}
   - component: {fileID: 978275435}
   - component: {fileID: 978275434}
+  - component: {fileID: 978275438}
   m_Layer: 0
   m_Name: PlayerCard
   m_TagString: Untagged
@@ -1625,8 +1629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardMovement: {fileID: 978275434}
-  PlayerHealth: {fileID: 0}
-  Slot: {fileID: 0}
+  PlayerHealth: {fileID: 978275438}
+  Slot: {fileID: 1181795024}
 --- !u!61 &978275436
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1670,6 +1674,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &978275438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978275433}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb2504ba5c27fc409dac5e6ac158c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthText: {fileID: 1596418329}
 --- !u!1 &1025436222
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,6 +1884,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 1158116122}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &1158116124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2811,6 +2829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1455026442}
+  - component: {fileID: 1455026443}
   - component: {fileID: 1455026441}
   - component: {fileID: 1455026440}
   m_Layer: 0
@@ -2859,6 +2878,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1455026443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455026439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923977d1346c5c349a663d9d82627647, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1481149400
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,7 +3327,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3500,6 +3531,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 1749893520}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &1749893522
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3801,6 +3833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 2008724144}
   cardCanvas: {fileID: 0}
+  valueText: {fileID: 0}
 --- !u!61 &2008724146
 BoxCollider2D:
   m_ObjectHideFlags: 0

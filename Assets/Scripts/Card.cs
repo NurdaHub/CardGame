@@ -1,20 +1,23 @@
+using TMPro;
 using UnityEngine;
 
 public class Card : MonoBehaviour
 {
     [SerializeField] private CardScaler cardScaler;
     [SerializeField] private Canvas cardCanvas;
-    private PlayerCard playerCard;
+    [SerializeField] private TextMeshProUGUI valueText;
     private Slot slot;
     private Vector3[] neighbours;
     private bool isMouseDown;
+    protected PlayerCard playerCard;
+    public int CardValue { get; private set; }
 
     private void Start()
     {
         cardScaler.OnScaleEndAction += OnScaleEnd;
     }
 
-    public void Init(PlayerCard _playerCard, Camera _camera, Slot _slot)
+    public void Init(PlayerCard _playerCard, Camera _camera, Slot _slot, int _cardValue)
     {
         playerCard = _playerCard;
         slot = _slot;
@@ -22,6 +25,8 @@ public class Card : MonoBehaviour
         _slot.isFree = false;
         transform.position = _slot.transform.position;
         cardCanvas.worldCamera = _camera;
+        CardValue = _cardValue;
+        valueText.text = _cardValue.ToString();
         cardScaler.Scale();
     }
     
@@ -38,6 +43,7 @@ public class Card : MonoBehaviour
     {
         if (isMouseDown)
         {
+            PlayerHealthChange();
             playerCard.SetSlot(slot);
             isMouseDown = false;
             gameObject.SetActive(false);
@@ -53,5 +59,10 @@ public class Card : MonoBehaviour
         }
 
         return false;
+    }
+
+    protected virtual void PlayerHealthChange()
+    {
+        
     }
 }

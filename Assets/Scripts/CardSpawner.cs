@@ -37,33 +37,28 @@ public class CardSpawner : MonoBehaviour
         }
     }
 
-    private void SpawnRedCard()//Vector3 _position, Vector3[] _neighbours)
+    private void SpawnRedCard()
     {
-        SpawnNewCard(redCardsPool);//, _position, _neighbours);
+        SpawnNewCard(redCardsPool);
     }
 
-    private void SpawnGreenCard()//Vector3 _position, Vector3[] _neighbours)
+    private void SpawnGreenCard()
     {
-        SpawnNewCard(greenCardsPool); //, _position, _neighbours);
+        SpawnNewCard(greenCardsPool);
     }
 
-    private void SpawnNewCard(Pool<Card> cardsPool)//, Vector3 _position, Vector3[] _neighbours)
+    private void SpawnNewCard(Pool<Card> cardsPool)
     {
         Slot slot = GetFreeSlot();
         var newCard = cardsPool.GetFreeElement();
-        //newCard.transform.position = _position;
-        newCard.Init(playerCard, mainCamera, slot);
+        newCard.Init(playerCard, mainCamera, slot, GetRandomValue());
     }
 
     public void NewRandomCard()
     {
         float random = Random.Range(0, 100);
         float chance = levelManager.level * multiplier;
-        // var slot = GetFreeSlot();
-        // slot.isFree = false;
-        // Vector3 spawnPosition = slot.transform.position;
-        // Vector3[] neighbours = slot.neighbours;
-        
+
         if (random < chance)
             SpawnRedCard();
         else
@@ -79,5 +74,11 @@ public class CardSpawner : MonoBehaviour
         }
 
         return null;//allSlots.First(s => s.isFree);
+    }
+
+    private int GetRandomValue()
+    {
+        int range = Random.Range(0, levelManager.level);
+        return 1 + range;
     }
 }
