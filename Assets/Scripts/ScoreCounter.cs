@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class ScoreCounter : MonoBehaviour
@@ -5,6 +6,7 @@ public class ScoreCounter : MonoBehaviour
     public int score { get; private set; }
 
     [SerializeField] private LevelManager levelManager;
+    public TextMeshProUGUI scoreText;
     private int perScore = 10;
     private int scoreForLevelUp = 10;
 
@@ -16,6 +18,7 @@ public class ScoreCounter : MonoBehaviour
     public void ScoreUp()
     {
         score++;
+        scoreText.text = score.ToString();
 
         if (score >= scoreForLevelUp)
         {

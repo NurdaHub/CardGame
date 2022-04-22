@@ -1,19 +1,20 @@
-using System;
 using UnityEngine;
 
 public class Game : MonoBehaviour
 {
-    public ScoreCounter ScoreCounter { get; private set; }
-    public PlayerCard PlayerCard { get; private set; }
-    public CardSpawner CardSpawner { get; private set; }
+    public ScoreCounter ScoreCounter;
+    public PlayerCard PlayerCard;
+    public CardSpawner CardSpawner;
+    public LevelManager LevelManager;
 
     private void Start()
     {
-        PlayerCard.OnCardMoveCompleteAction += OnCardMove;
+        PlayerCard.OnCardMoveCompleteAction += OnPlayerCardMoveComplete;
     }
 
-    public void OnCardMove()
+    public void OnPlayerCardMoveComplete()
     {
-        
+        ScoreCounter.ScoreUp();
+        CardSpawner.NewRandomCard();
     }
 }

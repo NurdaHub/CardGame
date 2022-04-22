@@ -20,7 +20,6 @@ public class CardSpawner : MonoBehaviour
     {
         CreatePool();
         SpawnAllCards();
-        playerCard.OnCardMoveCompleteAction += NewRandomCard;
     }
 
     private void CreatePool()
