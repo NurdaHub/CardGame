@@ -5,17 +5,21 @@ public class PlayerCard : MonoBehaviour
 {
     [SerializeField] private CardMovement cardMovement;
     [SerializeField] private PlayerHealth playerHealth;
+    [SerializeField] private Slot slot;
     
-    private Slot slot;
-    
-    public Action OnCardMoveCompleteAction;
+    public event Action OnCardMoveCompleteAction;
 
     private void Start()
     {
         cardMovement.OnMoveCompleteAction += OnMoveComplete;
         slot.isFree = false;
     }
-    
+
+    private void OnDisable()
+    {
+        cardMovement.OnMoveCompleteAction -= OnMoveComplete;
+    }
+
     private void OnMoveComplete()
     {
         OnCardMoveCompleteAction?.Invoke();

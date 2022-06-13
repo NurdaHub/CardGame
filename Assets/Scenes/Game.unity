@@ -181,6 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 470333543}
   - component: {fileID: 470333542}
+  - component: {fileID: 470333544}
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
@@ -200,10 +201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0a611d492412324dae12210089993cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 1455026441}
+  levelCounter: {fileID: 1455026441}
+  poolsService: {fileID: 470333544}
   playerCard: {fileID: 978275435}
-  redCardPrefab: {fileID: 2714239172929897308, guid: 319f9f87ee0bfdb4b907a45eb99e50f2, type: 3}
-  greenCardPrefab: {fileID: 6809642897802584415, guid: d25a64d66e6d7014f86b9a4cf5d77b77, type: 3}
   mainCamera: {fileID: 1913131692}
   allSlots:
   - {fileID: 583230532}
@@ -215,7 +215,6 @@ MonoBehaviour:
   - {fileID: 1260310976}
   - {fileID: 93538351}
   - {fileID: 1045992716}
-  multiplier: 0.1
 --- !u!4 &470333543
 Transform:
   m_ObjectHideFlags: 0
@@ -230,6 +229,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &470333544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470333541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4306e57b51c891547b09837a9658db11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redCardPrefab: {fileID: 2714239172929897308, guid: 319f9f87ee0bfdb4b907a45eb99e50f2, type: 3}
+  greenCardPrefab: {fileID: 6809642897802584415, guid: d25a64d66e6d7014f86b9a4cf5d77b77, type: 3}
 --- !u!114 &489565780 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7616399374616752250, guid: 3db389296c1f98240b17a7e63ae274cd, type: 3}
@@ -900,6 +913,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3db389296c1f98240b17a7e63ae274cd, type: 3}
+--- !u!114 &7616399374400609839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7765647512016323548, guid: 3db389296c1f98240b17a7e63ae274cd, type: 3}
+  m_PrefabInstance: {fileID: 7616399374400609838}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7561fd7dbf4d98847886ec873bad7c11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8639775562715369272
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -964,9 +988,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 978275435}
     - target: {fileID: 8639775561939025459, guid: 7344ca5b983a8e442a4738184543e133, type: 3}
+      propertyPath: playerCard
+      value: 
+      objectReference: {fileID: 978275435}
+    - target: {fileID: 8639775561939025459, guid: 7344ca5b983a8e442a4738184543e133, type: 3}
       propertyPath: CardSpawner
       value: 
       objectReference: {fileID: 470333542}
+    - target: {fileID: 8639775561939025459, guid: 7344ca5b983a8e442a4738184543e133, type: 3}
+      propertyPath: cardSpawner
+      value: 
+      objectReference: {fileID: 470333542}
+    - target: {fileID: 8639775561939025459, guid: 7344ca5b983a8e442a4738184543e133, type: 3}
+      propertyPath: uiTextHandler
+      value: 
+      objectReference: {fileID: 7616399374400609839}
     - target: {fileID: 8639775561939025471, guid: 7344ca5b983a8e442a4738184543e133, type: 3}
       propertyPath: m_Name
       value: Game
@@ -986,6 +1022,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9201514427191108643, guid: 3b21858a2c7114b439eaf9f597dcf66b, type: 3}
       propertyPath: Slot
+      value: 
+      objectReference: {fileID: 1181795024}
+    - target: {fileID: 9201514427191108643, guid: 3b21858a2c7114b439eaf9f597dcf66b, type: 3}
+      propertyPath: slot
       value: 
       objectReference: {fileID: 1181795024}
     - target: {fileID: 9201514427191108645, guid: 3b21858a2c7114b439eaf9f597dcf66b, type: 3}

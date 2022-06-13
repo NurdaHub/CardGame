@@ -45,10 +45,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 923977d1346c5c349a663d9d82627647, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScoreCounter: {fileID: 8639775561939025456}
-  PlayerCard: {fileID: 0}
-  CardSpawner: {fileID: 0}
-  LevelManager: {fileID: 8639775561939025457}
+  scoreCounter: {fileID: 8639775561939025456}
+  levelCounter: {fileID: 8639775561939025457}
+  playerCard: {fileID: 0}
+  cardSpawner: {fileID: 0}
+  uiTextHandler: {fileID: 0}
 --- !u!114 &8639775561939025457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61,7 +62,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11f5a239957b21744aaa98af80bdc62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelText: {fileID: 0}
 --- !u!114 &8639775561939025456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,5 +74,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba27a04cc69ffca4793f05ebc3fa9e51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 8639775561939025457}
-  scoreText: {fileID: 0}
+  levelCounter: {fileID: 8639775561939025457}

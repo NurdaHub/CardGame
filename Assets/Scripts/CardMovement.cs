@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CardMovement : MonoBehaviour
 {
-    public Action OnMoveCompleteAction;
+    public event Action OnMoveCompleteAction;
+    
     private float moveDuration = 1;
     
     public void Move(Vector3 targetPosition)

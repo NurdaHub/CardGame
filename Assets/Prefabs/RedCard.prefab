@@ -270,7 +270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 6969069991349886192}
-  cardUI: {fileID: 7046963138489040911}
+  cardCanvas: {fileID: 7046963138489040911}
 --- !u!114 &7046963138489040911
 MonoBehaviour:
   m_ObjectHideFlags: 0

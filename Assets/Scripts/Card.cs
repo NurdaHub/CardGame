@@ -3,7 +3,7 @@ using UnityEngine;
 public abstract class Card : MonoBehaviour
 {
     [SerializeField] private CardScaler cardScaler;
-    [SerializeField] private CardUI cardUI;
+    [SerializeField] private CardCanvas cardCanvas;
 
     private Slot slot;
     private Vector3[] neighbours;
@@ -23,7 +23,7 @@ public abstract class Card : MonoBehaviour
         slot = _slot;
         cardValue = _cardValue;
         SetSlot();
-        cardUI.Init(currentCamera, cardValue.ToString());
+        cardCanvas.Init(currentCamera, cardValue.ToString());
         cardScaler.Scale();
     }
 

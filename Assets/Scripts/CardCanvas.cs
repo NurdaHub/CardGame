@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-public class CardUI : MonoBehaviour
+public class CardCanvas : MonoBehaviour
 {
     [SerializeField] private Canvas cardCanvas;
     [SerializeField] private TextMeshProUGUI valueText;

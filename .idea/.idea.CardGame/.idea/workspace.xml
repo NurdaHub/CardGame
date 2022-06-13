@@ -21,21 +21,26 @@
   <component name="ChangeListManager">
     <list default="true" id="d5896d17-9b33-48a1-893a-c246f2fbcd76" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Game.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GreenCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GreenCard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/RedCard.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/RedCard.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardCanvas.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardCanvas.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelCounter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +51,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthTextSetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/UITextHandler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardUI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardCanvas.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PoolsService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Slot.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" root0="FORCE_HIGHLIGHTING" />
@@ -61,18 +68,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Slot.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HealthTextSetter.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PoolsService.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardCanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UITextHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/LevelCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameHandler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" />
       </list>
     </option>
   </component>
@@ -130,7 +142,7 @@
       <workItem from="1650531623687" duration="8974000" />
       <workItem from="1650617599085" duration="5006000" />
       <workItem from="1654695067928" duration="1930000" />
-      <workItem from="1655115937758" duration="6633000" />
+      <workItem from="1655115937758" duration="21014000" />
     </task>
     <servers />
   </component>
@@ -227,5 +239,13 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="74" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1655121298225" />
+    <state x="92" y="92" width="1416" height="676" key="VCS.FileHistoryDialog" timestamp="1655141924662">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="92" y="92" width="1416" height="676" key="VCS.FileHistoryDialog/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1655141924662" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1655139341700">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1655139341700" />
   </component>
 </project>

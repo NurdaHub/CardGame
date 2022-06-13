@@ -2,61 +2,61 @@ using UnityEngine;
 
 public class CardSpawner : MonoBehaviour
 {
-    [SerializeField] private LevelManager levelManager;
+    [SerializeField] private LevelCounter levelCounter;
+    [SerializeField] private PoolsService poolsService;
     [SerializeField] private PlayerCard playerCard;
-    [SerializeField] private Card redCardPrefab;
-    [SerializeField] private Card greenCardPrefab;
     [SerializeField] private Camera mainCamera;
     [SerializeField] private Slot[] allSlots;
-
-    private Pool<Card> redCardsPool;
-    private Pool<Card> greenCardsPool;
-    private int cardsCount = 5;
+    
+    private int minValue = 1;
+    private float minPercent = 0;
+    private float maxPercent = 100;
     private float maxChance = 50;
-    public float multiplier = 0.1f;
+    private float multiplier = 10f;
 
     private void Start()
     {
-        CreatePool();
+        poolsService.CreatePool();
         SpawnAllCards();
     }
 
-    private void CreatePool()
-    {
-        Transform parentTransform = transform;
-        redCardsPool = new Pool<Card>(redCardPrefab, cardsCount, parentTransform);
-        greenCardsPool = new Pool<Card>(greenCardPrefab, cardsCount, parentTransform);
-    }
+    
 
     private void SpawnAllCards()
     {
         for (int i = 0; i < allSlots.Length - 1; i++)
-        {
             NewRandomCard();
-        }
     }
 
     private void SpawnRedCard()
     {
-        SpawnNewCard(redCardsPool);
+        Card redCard = poolsService.GetRedCard();
+        SpawnNewCard(redCard);
     }
 
     private void SpawnGreenCard()
     {
-        SpawnNewCard(greenCardsPool);
+        Card greenCard = poolsService.GetGreenCard();
+        SpawnNewCard(greenCard);
     }
 
-    private void SpawnNewCard(Pool<Card> cardsPool)
+    private void SpawnNewCard(Card card)
     {
         Slot slot = GetFreeSlot();
-        var newCard = cardsPool.GetFreeElement();
-        newCard.Init(playerCard, mainCamera, slot, GetRandomValue());
+        
+        if (slot == null)
+            return;
+        
+        card.Init(playerCard, mainCamera, slot, GetRandomValue());
     }
 
     public void NewRandomCard()
     {
-        float random = Random.Range(0, 100);
-        float chance = levelManager.level * multiplier;
+        float random = Random.Range(minPercent, maxPercent);
+        float chance = levelCounter.Level * multiplier;
+
+        if (maxChance < chance)
+            chance = maxChance;
 
         if (random < chance)
             SpawnRedCard();
@@ -67,17 +67,17 @@ public class CardSpawner : MonoBehaviour
     private Slot GetFreeSlot()
     {
         foreach (var slot in allSlots)
-        {
             if (slot.isFree)
                 return slot;
-        }
 
         return null;
     }
 
     private int GetRandomValue()
     {
-        int range = Random.Range(0, levelManager.level);
-        return 1 + range;
+        int random = Random.Range(0, levelCounter.Level);
+        int randomValue = minValue + random;
+        
+        return randomValue;
     }
 }
