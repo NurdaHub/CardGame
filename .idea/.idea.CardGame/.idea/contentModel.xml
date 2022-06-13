@@ -27,8 +27,10 @@
           <e p="CardMovement.cs" t="Include" />
           <e p="CardScaler.cs" t="Include" />
           <e p="CardSpawner.cs" t="Include" />
+          <e p="CardUI.cs" t="Include" />
           <e p="Game.cs" t="Include" />
           <e p="GreenCard.cs" t="Include" />
+          <e p="HealthTextSetter.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
           <e p="PlayerCard.cs" t="Include" />
           <e p="PlayerHealth.cs" t="Include" />

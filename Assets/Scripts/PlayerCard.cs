@@ -4,26 +4,32 @@ using UnityEngine;
 public class PlayerCard : MonoBehaviour
 {
     [SerializeField] private CardMovement cardMovement;
-    public PlayerHealth PlayerHealth;
-    public Slot Slot;
+    [SerializeField] private PlayerHealth playerHealth;
+    
+    private Slot slot;
+    
     public Action OnCardMoveCompleteAction;
 
     private void Start()
     {
         cardMovement.OnMoveCompleteAction += OnMoveComplete;
-        Slot.isFree = false;
+        slot.isFree = false;
+    }
+    
+    private void OnMoveComplete()
+    {
+        OnCardMoveCompleteAction?.Invoke();
     }
 
     public void SetSlot(Slot _slot)
     {
-        Slot.isFree = true;
-        Slot = _slot;
-        cardMovement.Move(Slot.transform.position);
+        slot.isFree = true;
+        slot = _slot;
+        cardMovement.Move(slot.transform.position);
     }
 
-    private void OnMoveComplete()
+    public PlayerHealth GetPlayerHealth()
     {
-        //slot.isFree = true;
-        OnCardMoveCompleteAction?.Invoke();
+        return playerHealth;
     }
 }

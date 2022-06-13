@@ -9,6 +9,7 @@ public class CardMovement : MonoBehaviour
     
     public void Move(Vector3 targetPosition)
     {
-        transform.DOMove(targetPosition, moveDuration).OnComplete(() => { OnMoveCompleteAction?.Invoke(); });
+        transform.DOMove(targetPosition, moveDuration)
+            .OnComplete(() => { OnMoveCompleteAction?.Invoke(); });
     }
 }

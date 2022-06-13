@@ -20,14 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5896d17-9b33-48a1-893a-c246f2fbcd76" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CardGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Game.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Game.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Pool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Pool.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,28 +46,33 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Game.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HealthTextSetter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Slot.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Slot.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Game.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ScoreCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Pool.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardScaler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RedCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GreenCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerCard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CardMovement.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HealthTextSetter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerHealth.cs" />
       </list>
     </option>
   </component>
@@ -75,6 +88,7 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -115,6 +129,8 @@
       <workItem from="1650389260790" duration="4614000" />
       <workItem from="1650531623687" duration="8974000" />
       <workItem from="1650617599085" duration="5006000" />
+      <workItem from="1654695067928" duration="1930000" />
+      <workItem from="1655115937758" duration="6633000" />
     </task>
     <servers />
   </component>
@@ -207,5 +223,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="192" key="GridCell.Tab.3.right/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1649105991603" />
+    <state x="301" y="74" key="SettingsEditor" timestamp="1655121298225">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="301" y="74" key="SettingsEditor/0.0.1600.860/1600.0.1920.1040@0.0.1600.860" timestamp="1655121298225" />
   </component>
 </project>

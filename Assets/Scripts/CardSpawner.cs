@@ -1,4 +1,3 @@
-using System.Linq;
 using UnityEngine;
 
 public class CardSpawner : MonoBehaviour
@@ -24,8 +23,9 @@ public class CardSpawner : MonoBehaviour
 
     private void CreatePool()
     {
-        redCardsPool = new Pool<Card>(redCardPrefab, cardsCount, transform);
-        greenCardsPool = new Pool<Card>(greenCardPrefab, cardsCount, transform);
+        Transform parentTransform = transform;
+        redCardsPool = new Pool<Card>(redCardPrefab, cardsCount, parentTransform);
+        greenCardsPool = new Pool<Card>(greenCardPrefab, cardsCount, parentTransform);
     }
 
     private void SpawnAllCards()
@@ -72,7 +72,7 @@ public class CardSpawner : MonoBehaviour
                 return slot;
         }
 
-        return null;//allSlots.First(s => s.isFree);
+        return null;
     }
 
     private int GetRandomValue()

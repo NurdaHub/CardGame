@@ -1,25 +1,20 @@
-using TMPro;
 using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI healthText;
-    public int Health { get; private set; }
+    [SerializeField] private HealthTextSetter healthTextSetter;
+    
+    private int health;
 
     public void Heal(int value)
     {
-        Health += value;
-        SetText(Health);
+        health += value;
+        healthTextSetter.SetText(health.ToString());
     }
 
     public void Damage(int value)
     {
-        Health -= value;
-        SetText(Health);
-    }
-
-    private void SetText(int value)
-    {
-        healthText.text = value.ToString();
+        health -= value;
+        healthTextSetter.SetText(health.ToString());
     }
 }
