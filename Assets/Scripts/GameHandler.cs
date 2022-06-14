@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour
 {
@@ -7,6 +8,9 @@ public class GameHandler : MonoBehaviour
     [SerializeField] private PlayerCard playerCard;
     [SerializeField] private CardSpawner cardSpawner;
     [SerializeField] private UITextHandler uiTextHandler;
+    [SerializeField] private UIButtonsHandler uiButtonsHandler;
+
+    private int currentSceneIndex = 0;
 
     private void Start()
     {
@@ -18,6 +22,8 @@ public class GameHandler : MonoBehaviour
         playerCard.OnCardMoveCompleteAction += OnPlayerCardMoveComplete;
         levelCounter.OnLevelUpEvent += OnLevelUp;
         scoreCounter.OnScoreUpEvent += OnScoreUp;
+        uiButtonsHandler.OnRestartButtonClickEvent += Restart;
+        uiButtonsHandler.OnExitButtonClickEvent += Exit;
     }
 
     private void OnDisable()
@@ -25,6 +31,8 @@ public class GameHandler : MonoBehaviour
         playerCard.OnCardMoveCompleteAction -= OnPlayerCardMoveComplete;
         levelCounter.OnLevelUpEvent -= OnLevelUp;
         scoreCounter.OnScoreUpEvent -= OnScoreUp;
+        uiButtonsHandler.OnRestartButtonClickEvent -= Restart;
+        uiButtonsHandler.OnExitButtonClickEvent -= Exit;
     }
 
     private void OnPlayerCardMoveComplete()
@@ -43,5 +51,15 @@ public class GameHandler : MonoBehaviour
     {
         string text = scoreCounter.Score.ToString();
         uiTextHandler.SetScoreText(text);
+    }
+
+    private void Restart()
+    {
+        SceneManager.LoadScene(currentSceneIndex);
+    }
+
+    private void Exit()
+    {
+        Application.Quit();
     }
 }

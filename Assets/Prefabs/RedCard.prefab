@@ -195,6 +195,7 @@ GameObject:
   - component: {fileID: 6969069991349886192}
   - component: {fileID: 2714239172929897308}
   - component: {fileID: 7046963138489040911}
+  - component: {fileID: 6851760560270687926}
   m_Layer: 0
   m_Name: RedCard
   m_TagString: Untagged
@@ -271,6 +272,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 6969069991349886192}
   cardCanvas: {fileID: 7046963138489040911}
+  mouseClickDetector: {fileID: 6851760560270687926}
 --- !u!114 &7046963138489040911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,6 +287,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardCanvas: {fileID: 6969069991268792919}
   valueText: {fileID: 6969069991906556398}
+--- !u!114 &6851760560270687926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6969069991349886193}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08aa069e5a0065540a1d18d533e6953a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6969069991448636036
 GameObject:
   m_ObjectHideFlags: 0

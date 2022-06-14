@@ -6,7 +6,7 @@ public class CardMovement : MonoBehaviour
 {
     public event Action OnMoveCompleteAction;
     
-    private float moveDuration = 1;
+    private float moveDuration = 0.4f;
     
     public void Move(Vector3 targetPosition)
     {

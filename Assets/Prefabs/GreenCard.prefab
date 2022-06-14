@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 8412372057891762025}
   - component: {fileID: 6809642897802584415}
   - component: {fileID: 2406633377647470722}
+  - component: {fileID: 1236229782062000417}
   m_Layer: 0
   m_Name: GreenCard
   m_TagString: Untagged
@@ -387,6 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardScaler: {fileID: 8412372057891762025}
   cardCanvas: {fileID: 2406633377647470722}
+  mouseClickDetector: {fileID: 1236229782062000417}
 --- !u!114 &2406633377647470722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,6 +403,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cardCanvas: {fileID: 8412372058135792084}
   valueText: {fileID: 8412372057066369643}
+--- !u!114 &1236229782062000417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8412372057891762024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08aa069e5a0065540a1d18d533e6953a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8412372058135792080
 GameObject:
   m_ObjectHideFlags: 0

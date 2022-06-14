@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class CardScaler : MonoBehaviour
 {
-    public Action OnScaleEndAction;
+    public event Action OnScaleEndEvent;
     
     private Tweener scaleTween;
-    private float scaleDuration = 0.5f;
+    private float scaleDuration = 0.3f;
 
     public void Scale()
     {
@@ -23,6 +23,6 @@ public class CardScaler : MonoBehaviour
     {
         scaleTween?.Kill();
         scaleTween = transform.DOScale(value, scaleDuration)
-            .OnComplete(() => { OnScaleEndAction?.Invoke(); });
+            .OnComplete(() => { OnScaleEndEvent?.Invoke(); });
     }
 }

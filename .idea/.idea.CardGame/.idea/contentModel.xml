@@ -23,22 +23,31 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="Card.cs" t="Include" />
-          <e p="CardCanvas.cs" t="Include" />
-          <e p="CardMovement.cs" t="Include" />
-          <e p="CardScaler.cs" t="Include" />
+          <e p="Card" t="Include">
+            <e p="Card.cs" t="Include" />
+            <e p="CardCanvas.cs" t="Include" />
+            <e p="CardMovement.cs" t="Include" />
+            <e p="CardScaler.cs" t="Include" />
+            <e p="GreenCard.cs" t="Include" />
+            <e p="RedCard.cs" t="Include" />
+          </e>
           <e p="CardSpawner.cs" t="Include" />
           <e p="GameHandler.cs" t="Include" />
-          <e p="GreenCard.cs" t="Include" />
           <e p="HealthTextSetter.cs" t="Include" />
           <e p="LevelCounter.cs" t="Include" />
-          <e p="PlayerCard.cs" t="Include" />
-          <e p="PlayerHealth.cs" t="Include" />
-          <e p="Pool.cs" t="Include" />
-          <e p="PoolsService.cs" t="Include" />
-          <e p="RedCard.cs" t="Include" />
+          <e p="MainSceneUIHandler.cs" t="Include" />
+          <e p="MouseClickDetector.cs" t="Include" />
+          <e p="Player" t="Include">
+            <e p="PlayerCard.cs" t="Include" />
+            <e p="PlayerHealth.cs" t="Include" />
+          </e>
+          <e p="Pool" t="Include">
+            <e p="Pool.cs" t="Include" />
+            <e p="PoolsService.cs" t="Include" />
+          </e>
           <e p="ScoreCounter.cs" t="Include" />
           <e p="Slot.cs" t="Include" />
+          <e p="UIButtonsHandler.cs" t="Include" />
           <e p="UITextHandler.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

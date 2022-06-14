@@ -1,9 +1,11 @@
 using UnityEngine;
 
+[RequireComponent(typeof(MouseClickDetector))]
 public abstract class Card : MonoBehaviour
 {
     [SerializeField] private CardScaler cardScaler;
     [SerializeField] private CardCanvas cardCanvas;
+    [SerializeField] private MouseClickDetector mouseClickDetector;
 
     private Slot slot;
     private Vector3[] neighbours;
@@ -12,9 +14,16 @@ public abstract class Card : MonoBehaviour
     protected PlayerCard playerCard;
     protected int cardValue;
 
-    private void Start()
+    private void OnEnable()
     {
-        cardScaler.OnScaleEndAction += OnScaleEnd;
+        mouseClickDetector.OnMouseClickedEvent += OnMouseClicked;
+        cardScaler.OnScaleEndEvent += OnScaleEnd;
+    }
+
+    private void OnDisable()
+    {
+        mouseClickDetector.OnMouseClickedEvent -= OnMouseClicked;
+        cardScaler.OnScaleEndEvent -= OnScaleEnd;
     }
 
     public void Init(PlayerCard _playerCard, Camera currentCamera, Slot _slot, int _cardValue)
@@ -30,11 +39,11 @@ public abstract class Card : MonoBehaviour
     private void SetSlot()
     {
         slot.isFree = false;
-        neighbours = slot.neighbours;
+        neighbours = slot.GetNeighboursPosition();
         transform.position = slot.transform.position;
     }
 
-    private void OnMouseDown()
+    private void OnMouseClicked()
     {
         if (!IsNeighbour())
             return;
